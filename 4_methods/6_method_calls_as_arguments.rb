@@ -52,4 +52,21 @@ multiply(add(20, 45), subtract(80, 10))
 Let's see a complicated example:
 
 
-add(subtract(80, 10), multiply
+add(subtract(80, 10), multiply(subtract(20, 6), add(30, 5)))
+=> 560         #returns 560 
+(breakdown of this example below)
+- First, we passed two arguments to add: subtract(80, 10) and multiply(subtract(20,6), add(30, 5)).
+- The first argument (the subtract method call) returns 70. Cool.
+- The second argument (the multiply method call), has two arguments within it using method calls: subtract(20, 6) and add(30, 5).
+  - The subtract method call returns 14. The add method call returns 35. This makes the multiply method call multiply(14, 35). 
+    Evaluating the multiply call now returns 490.
+- Now we have the return values of the two method calls that were used as the initial arguments for the add method call - making 
+  a method call of add(70, 490) and returning 560. Sweet.
+
+**One thing to keep in mind: keep track of your parentheses when using nested method calls; as you've seen already, they can become 
+  an easy tripping point.**
+  
+Book note, word-for-word: "We've seen that method calls always return a value and we can pass that method call as an argument to 
+another method call based on the returned value. Thus, it's vital to know what our defined methods are returning - since in the final 
+analysis, this is what is actualy being passed as arguments to other method calls.
+

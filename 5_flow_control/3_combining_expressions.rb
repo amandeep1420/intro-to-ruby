@@ -41,10 +41,10 @@ We can do this using the && and || operators - let's discuss what they mean (aga
 IMPORTANT: Ruby follows an ORDER OF PRECEDENCE when deciding how to evaluate multiple expressions. Look at the list below to see the 
            highest order of precedence to the lowest.
            
-           1. Comparison - <=, <, >, >=
-           2. Equality - ==, !=
-           3. Logical AND - &&
-           4. Logical OR - ||
+           1. Comparison: <=, <, >, >=
+           2. Equality: ==, !=
+           3. Logical AND: &&
+           4. Logical OR: ||
 
 Keeping this in mind, we can see how the following expression is evaluated:
 
@@ -53,7 +53,7 @@ if x && y || z              - first, the x && y statement is executed; if true, 
   # do something            - if the x && y statement is false, then the z is evaluated; if true, then the next line of code is executed.
 end                         - if the z is false, then the code will exit the if statement entirely.
 
-
+Delete this line once you've gone through everything you've notated one time.
 
 
 

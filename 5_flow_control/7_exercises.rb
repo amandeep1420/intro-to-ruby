@@ -52,6 +52,27 @@ end
 check(number)
 
 #Come back and check how this compares to the book - we spent too much time on this one today.
+#wow....we waaaaaaaaaaaaay overthought this one. didn't need to write a method or anything. book solution below:
+
+puts "Please enter a number between 0 and 100."
+number = gets.chomp.to_i
+
+if number < 0
+  puts "You can't enter a negative number!"
+elsif number <= 50
+  puts "#{number} is between 0 and 50"
+elsif number <= 100
+  puts "#{number} is between 51 and 100"
+else
+  puts "#{number} is above 100"
+end
+
+#this is an important exercise to keep in mind. we didn't need to create a method because this code wasn't going to be used more than 
+#once. this illustrates where method creation is needed and where it is not. it also illustrates how if/else statements work in 
+#terms of how you can build each step on the result of the last, so to speak. a big issue you tried to address in the method you 
+#created was trying to evaluate multiple things during each if/elsif in the method definition, which is overkill/not how you should 
+#go about using this methodology. each step should address one thing. that is what I'm gleaning from this exercise, as well as the 
+#general use-case for method creation. this is was a good exercise for us.
 
 4.
 

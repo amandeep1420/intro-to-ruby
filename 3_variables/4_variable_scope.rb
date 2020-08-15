@@ -51,6 +51,8 @@ puts a       # is it accessible here?
 #The answer is yes; the for...do/end code did not use a method (for is just general Ruby language). 
 #each, times, etc. (using a period/using an actual method) is what creates blocks, where this rule applies.
 
+#To summarize: variable scope matters most/applies when considering code blocks, which are only created as a result of a method 
+#invocation. (I wrote this line myself when reviewing at a later date)
 
 
 

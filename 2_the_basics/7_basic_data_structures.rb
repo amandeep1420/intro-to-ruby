@@ -18,5 +18,5 @@
 #Use => (rocket) to assign a value to a key. Ex. key => value
 #Keys in a hash are usually represented as symbols.
 
-#Example hash: {:dog => 'barks', cat => 'meows', :pig => 'oinks'}[:cat] will return "meows"
+#Example hash: {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}[:cat] will return "meows"
 

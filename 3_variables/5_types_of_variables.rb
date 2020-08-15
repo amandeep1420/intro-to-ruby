@@ -7,7 +7,7 @@ Let's discuss each them in brief.
 Constants are declared by capitalizing every letter in a variable's name, per Ruby convention. They are used for storing data
 that never needs to change (but Ruby, unlike most programming languages, allows you to change the value of a constant if so desired).
 Ruby will throw a warning if you change the value of a constant, stating that there was a previous definition for that variable; 
-just because you can, doesn't mean you should. Constants cannot be declare din method definitions, and are available throughout 
+just because you can, doesn't mean you should. Constants cannot be declared in method definitions, and are available throughout 
 an application's scopes.
 ~~~~~~~~~~~~~~~~~~~~~~~~
 Example of a constant declaration:

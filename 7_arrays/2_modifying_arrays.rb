@@ -63,8 +63,59 @@ Note that there is no change to our original array after performing these method
 mutate the caller). How do we know which methods are destructive? Take a guess...you have to use them and pay attention to what is 
 returned, read the documentation, etc. Basically, through experience. 
 
+The "delete_at" method -can- be useful if you'd like to eliminate a value at a certain index from your array. BE CAREFUL WITH THIS ONE. 
+It's a destructive method (modifies your array permanently) - once you call this method, you're making a permanent change to your array.
 
 
+a = [1, 2, 3, 4]
+
+a.delete_at(1)
+=> 2
+
+a
+=> [1, 3, 4]                          #original array was modified - destructive~
+
+
+As an aside: sometimes you know the value you want to delete, but not the index. You can use the "delete" method for situations like 
+these - it'll permanently delete all instances of the provided value from the array. ALSO A DESTRUCTIVE METHOD.
+
+
+a = [1, 2, 3, 1, 2, 3]
+
+a.delete(1)
+=> 1
+
+a
+=> [2, 3, 2, 3]                       #original array was modified - destructive~
+
+
+Another useful array method is the "uniq" method. uniq will iterate through an array, delete any duplicate values, and return a new 
+array as a result (not a destructive method)...
+
+
+a = [1, 1, 2, 2, 3, 3, 4, 4]
+
+a.uniq
+=> [1, 2, 3, 4]
+
+a
+=> [1, 1, 2, 2, 3, 3, 4, 4]           #original array returned - not destructive~
+
+
+...unless you throw a bang suffix(!) on the end of the method; this will perform uniq destructively (similar to delete). Make note: uniq 
+and uniq! are two individual methods in Ruby - you can't just throw bangs on the ends of methods whenever you please, silly bean boi.
+
+
+a = ["cat", "cat", "dog", "dog", "mouse", "mouse"]
+
+b.uniq!
+=> ["cat", "dog", "mouse"]
+
+b
+=> ["cat", "dog", "mouse"]
+
+
+That's all she wrote~
 
 
 

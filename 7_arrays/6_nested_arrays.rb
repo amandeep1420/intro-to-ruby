@@ -1,7 +1,7 @@
 =begin
 
-So we've talked about how arrays can contain anything plenty of times - you can even create multidimensional arrays that have arrays inside 
-of them. Arrays in arrays in arrays. This lesson just seems to touch on the idea of multidimensional arrays.
+So we've talked about how arrays can contain anything plenty of times - you can even create nested arrays that have arrays inside 
+of them. Arrays in arrays in arrays. This lesson just seems to touch on the idea of nested arrays.
 
 Let's say you were having a sand volleyball tournament and wanted to keep track of all of the teams that were playing. You might create 
 an array such as below...

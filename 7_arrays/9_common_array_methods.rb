@@ -9,7 +9,7 @@ include?                                                     (methods with a ? a
 The "include?" method checks to see if the argument given is included in the specified array. It has a question mark at the end, which 
 usually means you should expect a boolean value to be returned (true or false). Keep in mind: just like methods that end in "!", this is 
 just a naming convention and not some kind of inherent Ruby thing where you can throw a "?" on the end of whatever method you want and call 
-it a day. See below for an example of include? being used?
+it a day. See below for an example of include? being used:
 =end
 
 
@@ -57,7 +57,7 @@ a = [1, 2, 3, 4, 5]
 
 a.each_index { |i| puts "This is index #{i}" }
 This is index 0
-This is index 1
+This is index 1                                             # I tested and found that this may not work with hashes...interesting..
 This is index 2
 This is index 3
 This is index 4
@@ -79,7 +79,7 @@ a = [1, 2, 3, 4, 5]
 a.each_with_index { |val, idx| puts "#{idx}. #{val}" }
 0. 1
 1. 2
-2. 3
+2. 3                                  # make note: the first parameter is the value, while the second is the index.
 3. 4
 4. 5
 => [1, 2, 3, 4, 5]
@@ -112,3 +112,21 @@ returning new data, or is the original data being modified?"
 Keep this in mind.
 
 ///////////////////////////////////////////////
+product
+
+The "product" method combines two arrays in a way that seems to create every possible pair from all the elements in both arrays...and 
+then sets each pair as a nested array within a larger array. Weird. See below for an example:
+=end
+
+
+[1, 2, 3].product([4, 5])
+=> [[1, 4], [1, 5], [2, 4], [2, 5], [3, 4], [3, 5]] 
+
+
+=begin
+We tested product in irb and found it to not be destructive. 
+
+There are tons of methods available for arrays - if you ever think "I want my array to...", there's probably a method that does that.
+Always read the documentation first, though, and figure out if it's a destructive method prior to use.
+
+Whew.

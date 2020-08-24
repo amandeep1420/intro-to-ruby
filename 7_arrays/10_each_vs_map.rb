@@ -58,7 +58,7 @@ map
 
 "map" also works on objects that allow for iteration. Like each, it will invoke a given block once for each element in a collection/array. 
 
-Where it really differs from each is the returned value; map creates and returns a new array containing the values returned by the block it 
+Where it really differs from each is the returned value; map creates AND returns a new array containing the values returned by the block it 
 was given. See below for an example:
 =end
 
@@ -93,7 +93,7 @@ a = [1, 2, 3]
 
 a.map
 => #<Enumerator: [1, 2, 3]:map>                          #please note: the # is actually part of the returned value.
-                                                          #we actually ran it in irb and copy-pasted the result.
+                                                         #we actually ran it in irb and copy-pasted the result.
 
 =begin
 each and map are important methods to know - but distinguishing between them can be confusing in the beginning.

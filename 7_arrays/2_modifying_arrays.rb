@@ -106,7 +106,7 @@ a
 and uniq! are two individual methods in Ruby - you can't just throw bangs on the ends of methods whenever you please, silly bean boi.
 
 
-a = ["cat", "cat", "dog", "dog", "mouse", "mouse"]
+b = ["cat", "cat", "dog", "dog", "mouse", "mouse"]
 
 b.uniq!
 => ["cat", "dog", "mouse"]

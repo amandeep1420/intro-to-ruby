@@ -79,7 +79,7 @@ a = [1, 2, 3, 4, 5]
 a.each_with_index { |val, idx| puts "#{idx}. #{val}" }
 0. 1
 1. 2
-2. 3                                  # make note: the first parameter is the value, while the second is the index.
+2. 3                                  # make note: the first parameter is always the value, while the second is always the index.
 3. 4
 4. 5
 => [1, 2, 3, 4, 5]

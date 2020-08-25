@@ -60,7 +60,7 @@ arr.last.first
 
 6.
 
-#So I did hop into irb for this one - my foundation with using arrayname[] was a little shaky, and I was a little perplexed by the error
+#So I did hop into irb for this one - my foundation with using arrayname[] was a little shaky, and I was a little perplexed by the error.
 #From what I can see, using arrayname[] needs the index, not the value. Problem 4 went over this in the third part. Okay. So the issue 
 #is that you need to use the index for this operation instead of the value - I tested this and it worked in irb. Let's confirm the answer.
 
@@ -68,3 +68,34 @@ arr.last.first
 
 7.
 
+array = ["x", "y", "z"]
+
+array.each_with_index { |val, idx| puts "#{idx}, #{val}" }
+
+#I did this correctly, but I need to remember that the first parameter for each_with_index is the value, while the second is the index.
+#I went back and changed my code to reflect this.
+
+8.
+
+array = [1, 2, 3]
+
+array2 = array.map { |x| x + 2 }
+
+p array
+p array2
+
+#I absolutely NAILED this one. Suck it, Trebeck. I didn't even know how to use p and used it correctly on my FIRST try. Boom.
+#Writing the first book solution below because it's good review of an alternate method.
+
+arr = [1, 2, 3]
+new_arr = []               #notice how they defined an empty array to start with
+
+arr.each do |n|            #notice how they used do/end - remember that they are interchangeable w/ {}
+  new_arr << n + 2         #I think this is called a shovel? I recall being able to push new values to an array using it.
+end 
+
+p arr
+p new_arr                 
+
+
+#Good job, yo.

@@ -25,3 +25,24 @@ end
 
 greeting("Bob")
 greeting("Bob", {age: 62, city: "New York City"})
+
+
+=begin                      (returns true if a hash contains no key-value pairs)
+Let's break this down.          |
+We used the Ruby hash method "empty?" to detect whether the options parameter, which is a hash, had anything passed into it (check the Ruby site 
+for more info - we wrote a quick definition above). We then called the method twice at the end - once using no optional parameters, and again 
+using a hash to send the optional parameters. You can see how using this feature could make methods more robust - more expressive, more dynamic.
+
+Finally, to add a small twist - you can also pass in arguments to our method as so:
+=end
+
+
+greeting("Bob", age: 62, city: "New York City")
+
+
+=begin
+I know, I know. Note how regular parentheses were used here instead of curly braces despite the last argument being a hash. I don't get why. 
+I suppose we should use this syntax instead of ("Bob", {age....}). Blah. I wish the book hadn't used the prior syntax in the first place.
+Keep in mind that the last syntax we used (no curly braces) is commonly used by Rails devs.
+
+Phew.

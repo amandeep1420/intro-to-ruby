@@ -124,3 +124,26 @@ end
 #I've spent almost an hour on this problem...
 #....I just looked at the solution....I hate that I'm so lost...
 #...I'm going to bed.
+#next day: circling back around, I was on the right train of thought - I just didn't put together the tools I've used to get to the destination.
+#it's all good.
+#solution code below - review this, it's a good one:
+
+result = {}
+
+words.each do |word|
+  key = word.split('').sort.join
+  if result.has_key?(key)
+    result[key].push(word)
+  else
+    result[key] = [word]
+  end
+end
+
+result.each_value do |v|
+  puts "------"           #this literally just puts a dash line b/t each line of values
+  p v
+end
+
+
+
+#word.

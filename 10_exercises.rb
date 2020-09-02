@@ -254,4 +254,5 @@ contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
 #Watch this again when reviewing.
   
 
+#Number of times I've iterated through all of my notes: 0
 

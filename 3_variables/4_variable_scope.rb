@@ -31,7 +31,7 @@ end
 puts a
 puts b            # is b accessible here, in the outer scope?
 
-#The answer is no - b is not accesible outside of the inner scope created by 3.times do..end. You get the below error:
+#The answer is no - b is not accessible outside of the inner scope created by 3.times do..end. You get the below error:
 
 #scope.rb:11:in `<main>': undefined local variable or method `b' for main:Object
 #(NameError)                                                                           #I used # for the error bc it was funky

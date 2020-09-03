@@ -5,7 +5,7 @@
 
 #To use them, just put a space b/t the values and the operators shown above. Very simple.
 
-/////////////////////////////////
+#/////////////////////////////////
 #LONG SECTION FOR MODULO VS METHODS
 
 #Ruby has a few new ones (to you) - see below:
@@ -52,7 +52,7 @@
   operator or method you need to use when working with negative integers.
 =end
    
-/////////////////////////////////
+#/////////////////////////////////
 #FLOATS IN OPERATIONS
 
 #If you want to get more accurate results from division (i.e. decimals), you can use floats.
@@ -60,7 +60,7 @@
 #When a float is used in an operation, Ruby will always return a float (even if one of the numbers is a plain integer).
 #You can use floats for all the basic mathematical operations specified at the beginning.
 
-/////////////////////////////////
+#/////////////////////////////////
 #EQUALITY COMPARISON
 
 #If you want to check whether two things are equal, use the == operator.
@@ -70,7 +70,7 @@
 
 #If you type "4" == 4, false will be returned as two different data types are being compared.
 
-/////////////////////////////////
+#/////////////////////////////////
 #STRING CONCATENATION
 
 #Think of this as smushing two strings together. You aren't adding in the traditional sense - rather, you're adjoining.

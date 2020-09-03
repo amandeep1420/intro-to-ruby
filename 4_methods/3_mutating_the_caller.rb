@@ -25,7 +25,7 @@ similarly to puts (seems to include quotes vs. puts which doesn't include them i
 
 See how the .pop method knocked off the 3 in the array -outside of the method-? We outputted the values to the console, and the a array 
 is clearly changed. Contrast this with a method such as .last (refer to "3x_nomutate.rb" to see this in action), which doesn't mutate 
-the caller. The same output is seen before -and- after the method invocation.
+the caller. The same output is seen before AND after the method invocation.
 
 How do you know which methods mutate the caller and which ones don't? Memorize it, lol. You'll have to look at documentation or put 
 methods into practice to figure this out.

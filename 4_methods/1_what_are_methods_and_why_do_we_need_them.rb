@@ -36,7 +36,7 @@ say("hi")
 say("how are you")
 say("I'm fine")
 
-Yes, this is a bit of a silly example as we actually added more code - but, per the book, "we've extraced the logic of printing 
+Yes, this is a bit of a silly example as we actually added more code - but, per the book, "we've extracted the logic of printing 
 out text so our program can have more flexibility."
 
 We call (or "invoke") the method by typing its name and passing in arguments to the (). You'll notice the (words) after say - that 
@@ -88,7 +88,7 @@ say is called without any arguments given. Coolio~
 //////////////////////////////////////////////////
 OPTIONAL PARENTHESES
 
-Rubyists often leave off parentheses when calling methods as a style choice ( so instead of writing say(), they'd just write say ). 
+Rubyists often leave off parentheses when calling methods as a style choice - so instead of writing say(), they'd just write say. 
 With arguments, peeps will write say "hi" instead of say("hi"). The tradeoff is more fluid reading of code at the expense of possible 
 confusion. Don't get confused! Just remember this, silly - especially so you don't get mixed up between local variables and method names.
 

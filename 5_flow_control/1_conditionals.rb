@@ -1,7 +1,7 @@
 =begin
 
 Think of a computer program as a journey for your data.
-Along this journey, data encounters stuff that changes it.
+Along this journey, data encounters stuff that changes it.    ~just like life~~~
 Like any journey, it has to travel a path - that path has many roads. 
 Some are chosen, some are not; the chosen roads depend on the end goal.
 

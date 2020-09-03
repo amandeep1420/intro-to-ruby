@@ -15,7 +15,7 @@ end
 
 
 Cool, we've defined two methods ('add' and 'subtract') that take parameters 'a' and 'b'. We will assume both are integer values. 
-Remember that Ruby implicitly returns a method's last line; since both meth defs contain just one line each, we're letting Ruby do its 
+Remember that Ruby implicitly returns a method's last line; since both method definitions contain just one line each, we're letting Ruby do its 
 thing using implicit return (we could've used an explicit return to be more specific if we wanted to, though). 
 Let's call these methods by passing integer values: 
 
@@ -68,5 +68,5 @@ add(subtract(80, 10), multiply(subtract(20, 6), add(30, 5)))
   
 Book note, word-for-word: "We've seen that method calls always return a value and we can pass that method call as an argument to 
 another method call based on the returned value. Thus, it's vital to know what our defined methods are returning - since in the final 
-analysis, this is what is actualy being passed as arguments to other method calls.
+analysis, this is what is actualy being passed as arguments to other method calls."
 

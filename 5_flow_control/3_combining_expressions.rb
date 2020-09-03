@@ -32,7 +32,7 @@ We can do this using the && and || operators - let's discuss what they mean (aga
   ! - the "not" operator. When you add this in front of a boolean expression, it wil change that boolean value to its opposite.
   
   Ex. !(4 == 4)        #Ruby first evaluates what is in the parentheses, then the ! operator changes it. We know 4 == 4 would return 
-      => false          true. Saying !true returns false. Think of !true as saying "not true". Not operator. Not. Cool.
+      => false          true. Saying !true returns false. Think of !true as saying "not true". Not operator. Not. NOT. Cool.
       
 **Note: when combining expressions (such as the ! example), it is good to use parentheses to group expressions together. This increases 
   readability AND helps your computer more accurately understand the intention behind the code. Parentheses are evaluated in normal 
@@ -54,6 +54,7 @@ if x && y || z              - first, the x && y statement is executed; if true, 
 end                         - if the z is false, then the code will exit the if statement entirely.
 
 Delete this line once you've gone through everything you've notated one time.
+Instead of deleting it now, we'll delete it...someday.
 
 
 

@@ -1,6 +1,6 @@
 #Two common data structures that are used in Ruby are "arrays" and "hashes". 
 
-//////////////////////////////////////
+#//////////////////////////////////////
 #ARRAYS
 
 #An array is used to organize information into an ordered list. The list can have any data type (integers, strings, booleans, floats, etc.)
@@ -10,7 +10,7 @@
 #You can use the index to access each element of an array; indices start at [0] for the first element.
 #Ex. [1, 2, 3, 4][0] = 1
 
-//////////////////////////////////////
+#//////////////////////////////////////
 #HASHES
 
 

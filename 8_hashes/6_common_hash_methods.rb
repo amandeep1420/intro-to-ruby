@@ -48,7 +48,7 @@ for what to return if that key isn't present. See below:
 name_and_age = { "bob" => 42, "steve" => 21, "joe" => 54 }
 
 name_and_age.fetch("steve")
-=> 42
+=> 21
 
 name_and_age.fetch("bobby brown")                                         #error is returned when option for lack of key presence isn't specified
 => KeyError: key not found: "bobby brown"
@@ -64,7 +64,8 @@ name_and_age.fetch("bobby brown", "bobby brown is not in this hash")      #optio
 ////////////////////////////////////////////////
 to_a
 
-The "to_a" method returns an array version of a hash when called. It is not destructive. See below for an example:
+The "to_a" method returns an array version of a hash when called, turning each key-value pair into a sub-array of one large array.
+It is not destructive. See below for an example:
 =end
 
 

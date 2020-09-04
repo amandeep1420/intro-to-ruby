@@ -22,7 +22,7 @@ puts "Done!"
 Notice how the program waits for user input before executing the loop.
 Let's break this code down:
   - First, the program waits for the user to input a number (observe what happens when a negative or a string is inputted)
-  - Next, the program evaluates the line x >= 0 - which evaluates to true (if you put a positive integer(. 
+  - Next, the program evaluates the line x >= 0 - which evaluates to true (if you put a positive integer). 
   - The program then enters the loop, executing puts x and then x = x - 1. 
   - The program returns to the top, now with the newly updated value of x, and repeats the first evaluation, and so on.
   - This continues until x >=0 evaluates to false, at which points the loop is exited and the rest of the program is executed.

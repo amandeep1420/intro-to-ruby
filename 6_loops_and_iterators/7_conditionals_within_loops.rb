@@ -62,7 +62,7 @@ end
 
 We used "break" to end the loop once x reached 7 - so the printout goes 1, 3, 5.
 
-Soooooo loops are basic constructs that are commin in any programming language....but most Rubyists, where possible, 
+Soooooo loops are basic constructs that are common in any programming language....but most Rubyists, where possible, 
 prefer iterators over loops. Onward~
 
 

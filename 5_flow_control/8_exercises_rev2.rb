@@ -68,4 +68,14 @@ end
 
 4.
 
+  1. false                      #correct
+  2. "Did you get it right?"    #correct
+  3. "Alright now!"             #correct
+  
+5.
 
+#put an end after the if/else statement/need another end
+
+#correct - to be more specific: the end that was there matched with the if..end statement, leaving the method definition unfinished. 
+#indents don't matter - the ends travel back out of the scope one-by-one, it seems.
+  

@@ -11,7 +11,7 @@ However, it's possible to use a different data type for a key - see below:
 {"height" => "6 ft"}                          # string as a key
 => {"height"=>"6 ft"}
 
-{["height"]} => "6 ft"}                       # array as a key
+{["height"] => "6 ft"}                       # array as a key
 => {["height"]=>"6 ft"}
 
 {1 => "one"}                                  # integer as a key

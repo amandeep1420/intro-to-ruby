@@ -1,6 +1,6 @@
 =begin
 
-So, we finally arrived at discussing hashes.
+So, we've finally arrived at discussing hashes.
 
 A hash is a data structure that stores items by associated keys; this is contrasted against arrays, which store items by an ordered index.
 (the above is verbatim from the book - arrays use an index, hashes use keys)

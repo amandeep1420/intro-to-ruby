@@ -9,3 +9,5 @@ Something that muddles this further is considering methods like "pop" and "push"
 It's a little confusing in the beginning, but you'll get used to differentiating between common methods as you write more code in Ruby. 
 Knowing what's destructive and what's not, while very useful and integral to programming in Ruby, is something that will be learned 
 through experience above all else (I think).
+
+=end

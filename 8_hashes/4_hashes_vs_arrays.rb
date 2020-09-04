@@ -8,7 +8,7 @@ It's impossible to learn everything in the beginning, so let's learn a few thing
 
 Things to consider when deciding to use a hash or an array:
 
-- does the data need to be associated with a specific label? If yes, use a hash. If no (the data doesn't have a natural lavel), then an array 
+- does the data need to be associated with a specific label? If yes, use a hash. If no (the data doesn't have a natural label), then an array 
   will work fine.
 
 - does order matter? If yes, then use an array. Ruby 1.9 introduced hashes maintaining order as well, but usually ordered items are stored in an 

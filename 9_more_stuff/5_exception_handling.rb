@@ -72,7 +72,7 @@ If we remove the rescue block, the second puts method call will not execute beca
 You can see why the word "rescue" is relevant here, lol. We are effectively rescuing our program from coming to a grinding halt.
 If we give this same code the proper variable, our rescue block never gets executed.
 
-We can also rescue pre-exiting errors when we are writing our code. Let's look at doing something like that with a "divide" method, below:
+We can also rescue pre-existing errors when we are writing our code. Let's look at doing something like that with a "divide" method, below:
 =end
 
 

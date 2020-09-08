@@ -25,7 +25,7 @@ In the above example, we see a TypeError because the two types don't match - one
 to add them together. In Ruby terms: an exception is raised, which will halt execution unless there is code in place to rescue the exception.
 
 Ruby has a set of built-in exceptions that also come with an attached message. In the above example, the exception is a TypeError and tells us 
-it can't add the two together without explicitly converint one to a compatible type.
+it can't add the two together without explicitly converting one to a compatible type.
 Some other common built-in error types you might see are below:
 =end
 
@@ -106,7 +106,7 @@ line 2.
 
 Whew. Eye break.
 
-This is a shroter error stack trace than most - let's take a look at a slightly more complex example. Note: try not to worry about anything 
+This is a shorter error stack trace than most - let's take a look at a slightly more complex example. Note: try not to worry about anything 
 you don't understand in the code yet, just pay attention to the stack trace and how it allows you to see what called which method + provides a 
 trail of calls.
 

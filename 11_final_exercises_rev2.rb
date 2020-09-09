@@ -179,6 +179,36 @@ arr
 
 # "These hashes are the same!"
 
-# same symbols, just different ways to declare them being used; hashes don't check for order inherently...or something.
+# same symbols, just different ways to declare them being used; hashes don't check for order inherently...or something. Changed with v.1.9?
 # I'd like to hear what the book solution is, so I'm going to watch the solution video for enrichment.
+# correct - Ruby doesn't check for order when it comes to hashes since you retrieve values based on keys, not an index.
 
+16.
+
+#...this problem again.
+
+contact_data = ["joe@email.com", "123 Main st.", "555-123-4567"]
+contacts = { "Joe Smith" => {} }
+
+#okay, so we need to find a way to push info from the array to the hash
+#first, we need to create something to push to, right? so [:email, :address, :phone]?
+#let's check the array shift and first methods per the book real quick..
+
+#I don't see myself solving this one in a timely fashion.
+#going to watch the video, then type out the solution and chew it over for a bit.
+
+#so the solution is actually fairly simple/straightforward - I just couldn't conceptualize having nested method calls for the hash and array.
+#see below for solution to base question (not bonus)
+
+contact_data = ["joe@email.com", "123 Main st.", "555-123-4567"]
+contacts = {"Joe Smith" => {} }
+
+fields = [:email, :address, :phone]
+
+contacts.each do |name, hash|
+  fields.each do |field|
+    hash[field] = contact_data.shift
+  end  
+end
+
+#the bonus used each_with_index - see if you can solve that without referencing the book in the future.
